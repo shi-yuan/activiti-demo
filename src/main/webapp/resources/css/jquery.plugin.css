@@ -1,0 +1,159 @@
+.ui-dialog {
+}
+
+/** 树形插件样式 */
+.ui-tree * {
+    padding: 0px;
+    margin: 0px;
+}
+
+.ui-tree ul {
+    margin-left: 1.5em;
+}
+
+/*.ui-tree li div { display:inline-block; } */
+.ui-tree li.collapsed > ul {
+    display: none;
+}
+
+.ui-tree .hide {
+    display: none;
+}
+
+.ui-tree .actions {
+    margin-left: 5px;
+}
+
+.ui-tree .node-img {
+    display: inline-block;
+}
+
+.ui-tree .node-text {
+    padding-left: 5px;
+}
+
+.ui-tree .status-img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ui-tree .actions {
+    display: none;
+}
+
+.ui-tree li > .node-box {
+    height: 20px;
+}
+
+.ui-tree li > .node-box:hover > .actions {
+    display: inline-block;
+}
+
+.ui-tree li > .node-box:hover > .actions > * {
+    margin-right: 5px;
+}
+
+.ui-tree li > .node-box > span {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.ui-tree li > .node-box > input {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.ui-tree li > .node-box > .status-img {
+    width: 18px;
+}
+
+.ui-tree li.expanded > .node-box > .status-img {
+    background: url(../image/tree/expanded.gif) no-repeat center center;
+}
+
+.ui-tree li.collapsed > .node-box > .status-img {
+    background: url(../image/tree/collapsed.gif) no-repeat center center;
+}
+
+/**/
+.g-row-tpl {
+    display: none;
+}
+
+/**/
+.simple-tree .node {
+    padding-left: 20px;
+}
+
+.simple-tree .status-img {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.simple-tree li.expanded .status-img {
+    width: 18px;
+    height: 18px;
+    background: url(../image/tree/expanded.gif) no-repeat center center;
+}
+
+.simple-tree li.collapsed .status-img {
+    width: 18px;
+    height: 18px;
+    background: url(../image/tree/collapsed.gif) no-repeat center center;
+}
+
+.simple-tree li.leaf .status-img {
+    width: 18px;
+    height: 18px;
+    background: none;
+}
+
+.simple-tree .rowbox .check-img {
+    width: 18px;
+    height: 18px;
+    background: url(../image/tree/checkbox.gif) no-repeat;
+}
+
+.simple-tree .rowbox .check-img {
+    background-position: 0 0;
+}
+
+.simple-tree .rowbox .check-img:hover {
+    background-position: 0 -18px;
+}
+
+.simple-tree .checked > .rowbox .check-img {
+    background-position: 0 -36px;
+}
+
+.simple-tree .checked > .rowbox .check-img:hover {
+    background-position: 0 -72px;
+}
+
+.simple-tree .half-checked > .rowbox .check-img {
+    background-position: 0 -162px;
+}
+
+.simple-tree .half-checked > .rowbox .check-img:hover {
+    background-position: 0 -180px;
+}
+
+.simple-tree .rowitem {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.simple-tree li.collapsed .children {
+    display: none;
+}
+
+.simple-tree .rowbox div {
+    display: inline-block;
+}
+
+.simple-tree .text {
+    background: none;
+    border: none;
+    float: none;
+    padding: 0px;
+}

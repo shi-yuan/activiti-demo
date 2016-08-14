@@ -1,0 +1,255 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+    list-style-position: outside;
+}
+
+a, img {
+    border: 0;
+    outline: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #000;
+    line-height: 24px;
+}
+
+a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: #d2ff00;
+    outline: none;
+}
+
+input, textarea, select, button {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    outline: none;
+}
+
+ul li {
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+
+.nav_num1,
+.nav_num2 {
+    background: url(../image/nav_number.png) no-repeat left top;
+    width: 25px;
+    height: 26px;
+    line-height: 25px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+.nav_num2 {
+    width: 34px;
+    background-position: right top;
+}
+
+.index_main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #85d2d8 url(../image/index_center_bg.jpg) repeat-x;
+}
+
+.index_main .logo {
+    width: 264px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.index_main a.quite {
+    width: 34px;
+    height: 37px;
+    overflow: hidden;
+    display: block;
+    background: url(../image/index_quite.png) no-repeat;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+}
+
+.index_main .nav {
+    width: 450px;
+    margin: 0px auto;
+    padding-top: 150px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.index_main .nav a {
+    float: left;
+    width: 86px;
+    margin-right: 60px;
+    text-align: center;
+    padding-top: 95px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.index_main .nav a.nav1 {
+    background: url(../image/nav1.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav2 {
+    background: url(../image/nav2.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav3 {
+    background: url(../image/nav3.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav4 {
+    background: url(../image/nav4.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav5 {
+    background: url(../image/nav5.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav6 {
+    background: url(../image/nav6.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav7 {
+    background: url(../image/nav7.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav8 {
+    background: url(../image/nav8.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav9 {
+    background: url(../image/nav9.png) no-repeat center 5px;
+}
+
+.index_main .nav a.nav10 {
+    background: url(../image/nav10.png) no-repeat center 5px;
+}
+
+.index_main .nav a:link,
+.index_main .nav a:visited,
+.index_main .nav a:hover {
+    color: #FFF;
+}
+
+.index_main .header {
+    width: 100%;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.20;
+    opacity: 0.20;
+    background: #000;
+    height: 70px;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+}
+
+.index_main .header_box {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    height: 70px;
+    text-align: center;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1000;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.index_main .header_box span#time {
+    font-size: 24px;
+    line-height: 70px;
+    color: #FFF;
+}
+
+.index_main .header_box span.admin {
+    position: absolute;
+    right: 80px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 70px;
+    color: #4abed3;
+}
+
+.index_main .header_box span.admin strong {
+    color: #00f0ff;
+}
+
+.index_holder {
+    width: 100%;
+    background: url(../image/index_bottom.png) no-repeat center bottom;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*.index_main .login{width:500px; left:50%; marin-left:-250px; margin-top:100px;border:1px solid red; position:relative;}*/
+.index_main .login {
+    width: 400px;
+    height: 250px;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -200px;
+    position: relative;
+}
+
+.index_main .login {
+    width: 400px;
+    height: 250px;
+    left: 50%;
+    margin-top: 200px;
+    margin-left: -200px;
+    position: relative;
+}
+
+.index_main .login input {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.index_main .login select {
+    width: 154px;
+    margin-left: 6px;
+}
+
+.index_main .login .submit-btn {
+    width: 60px;
+    margin-left: 160px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -1,0 +1,75 @@
+group "cn.com.infcn"
+version "1.0-SNAPSHOT"
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+ext {
+    javaCompatibility = "1.8"
+    springVersion = "4.3.1.RELEASE"
+    activitiVersion = "5.21.0"
+    encoding = "UTF-8"
+}
+
+allprojects {
+
+    repositories {
+        mavenLocal()
+        //maven { url "http://maven.oschina.net/content/groups/public/" }
+        mavenCentral()
+    }
+
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = javaCompatibility
+        targetCompatibility = javaCompatibility
+        options.encoding = encoding
+    }
+}
+
+/**
+ * package workflow files
+ */
+task "wf-pkg"(type: Zip) {
+    println("packing workflows...")
+    from "src/main/resources/META-INF/workflow"
+    include "*.*"
+    destinationDir new File("${buildDir}/resources/main/META-INF")
+    archiveName "workflows.zip"
+}
+
+dependencies {
+    // persistence
+    compile "org.springframework:spring-jdbc:$springVersion"
+    runtime "org.apache.commons:commons-dbcp2:2.1.1"
+    runtime "mysql:mysql-connector-java:5.1.39"
+
+    // Logging
+    compile "org.slf4j:slf4j-api:1.7.5"
+    runtime "org.slf4j:slf4j-log4j12:1.7.5"
+
+    // SPRING
+    compile "org.springframework:spring-webmvc:$springVersion"
+    compile "org.springframework:spring-aspects:$springVersion"
+    // for spring-mvc json
+    compile "com.fasterxml.jackson.core:jackson-databind:2.8.1"
+
+    // WEB
+    compile "taglibs:standard:1.1.2"
+    compile "javax.servlet:jstl:1.2"
+    providedCompile "javax.servlet:javax.servlet-api:3.1.0"
+
+    // activiti
+    compile "org.activiti:activiti-spring:$activitiVersion"
+    compile "org.activiti:activiti-engine:$activitiVersion"
+
+    testCompile "junit:junit:4.12"
+}
+
+//
+jettyRun {
+    httpPort = 8088
+    contextPath = ""
+    reload = "automatic"
+    scanIntervalSeconds = 1
+}
